@@ -1,14 +1,22 @@
 Package: mbr
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Date: 2023-05-28
+Title: Wrapper for embr
+Version: 0.0.1.9031
 Authors@R: 
-    person("Kirill", "Müller", , "kirill@cynkra.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-1416-3412"))
-Description: What the package does (one paragraph).
-License: GPL-3
-URL: https://github.com/krlmlr/tmbr, https://krlmlr.github.io/tmbr
-BugReports: https://github.com/krlmlr/tmbr/issues
+    person(given = "Joe",
+           family = "Thorley",
+           role = c("aut", "cre"),
+           email = "joe@poissonconsulting.ca")
+Description: Utility functions and virtual classes shared by model builder
+    packages such as tmbr, jmbr and smbr.
+License: MIT + file LICENSE
+URL: https://github.com/poissonconsulting/mbr
+BugReports: https://github.com/poissonconsulting/mbr/issues
+Depends:
+    R (>= 4.1)
+Imports:
+    embr
+Remotes: 
+    poissonconsulting/embr
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
+LazyData: true
 RoxygenNote: 7.2.3
